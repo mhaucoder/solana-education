@@ -70,30 +70,30 @@ const Date20_10 = () => {
       // mẹ
       openThiep(
         'Gửi lời tới mẹ của con',
-        'Con biết nơi quê nhà mẹ vẫn luôn lo lắng cho con, nhưng con nơi xa đã trưởng thành hơn rất nhiều. Con hiểu để sống và tồn tại không dễ nhưng đạo đức và những đức tính tốt con luôn tiếp thu và phát triển, mẹ đừng lo về những tệ nạn nơi sài thành. Vốn dĩ con đủ nhận thức và trưởng thành để nhận ra và tránh xa nó. Nên mẹ yên tâm. Chúc mẹ có một ngày lễ vui vẻ, đầy sức sống và luôn là chỗ dựa cho anh em con. Yêu mẹ !',
-        'nhatkicuame'
+        'Con biết nơi quê nhà mẹ vẫn luôn lo lắng cho con, nhưng con nơi xa đã trưởng thành hơn rất nhiều. Con hiểu để sống và tồn tại không dễ nhưng đạo đức tốt hay xấu con có thể phân biệt, xin mẹ đừng lo. Chúc mẹ có một ngày lễ vui vẻ, đầy sức sống và luôn là chỗ dựa cho anh em con. Con chỉ có vài câu thơ tặng mẹ. Yêu mẹ !</br> Nắng vàng chiếu rọi muộn màng </br> Lòng mẹ mang bao sầu thương </br> Con nơi phương xa vẫn nhớ </br> Người mẹ tần tảo nuôi con',
+        'thansinhphumau'
       );
-    } else if (pass === 'phuonganhpeiu3322') {
-      openThiep(
-        'Gửi lời tới người anh thương Phương Anh',
-        'Anh biết anh nhiều hơn rất là nhiều tuổi, nhưng khi bắt đầu anh đã chấp nhận thì mọi tính tình của em anh đều có thể hiểu và thông cảm. Nhưng anh là người ít nói, ít khi giải bày tâm trạng với ai khác, kể cả em. Người thật sự để anh nói ra chỉ có người đi cùng anh tới cuối đời. Nhưng anh nghĩ chúng ta không thể. Đương nhiên đó chỉ là suy đoán anh mong 1 ngày nào đó nó sẽ thay đổi tích cực. Tâm anh chỉ có mỗi em thôi. Thương em rất nhiều. Chúc em có một ngày lễ hạnh phúc, anh xin lỗi vì những muộn phiền do anh gây ra!',
-        'nuadoituyet'
-      );
-    } else if (pass === 'nganyc2212') {
-      // người yêu
-      openThiep(
-        'Gửi tới Thanh Nga',
-        'Có lẽ hai ta không có gì để nói hơn là tình bạn. T mong m với t vẫn là người bạn thay vì trở mặt thành một người xa lạ, có những lúc t kiệm lời vì khoảng cách chúng ta không cho phép, t vẫn mong m có được hạnh phúc. Chúc Nga có một ngày lễ vui vẻ hạnh phúc bên người yêu!',
-        'chanhlongthuongco'
-      );
-    } else if (pass === 'kimtientt3311') {
-      // người yêu
-      openThiep(
-        'Gửi tới Kim Tiền',
-        'Có lẽ anh là một thằng đàn ông tồi khi không giữ được em. Anh rất xin lỗi vì đã đến bên em lúc anh không có gì, xin lỗi vì đã từng bỏ rơi em và xin lỗi vì những suy nghĩ, hành động thiếu trưởng thành của anh. Cảm ơn em vì mọi thứ. Chúc em có một ngày lễ vui vẻ bên người em chọn.',
-        'chanhlongthuongco'
-      );
-    } else if (pass === 'lanhuongpek1112') {
+    // } else if (pass === 'phuonganhpeiu3322') {
+    //   openThiep(
+    //     'Gửi lời tới người anh thương Phương Anh',
+    //     'Anh biết anh nhiều hơn rất là nhiều tuổi, nhưng khi bắt đầu anh đã chấp nhận thì mọi tính tình của em anh đều có thể hiểu và thông cảm. Nhưng anh là người ít nói, ít khi giải bày tâm trạng với ai khác, kể cả em. Người thật sự để anh nói ra chỉ có người đi cùng anh tới cuối đời. Nhưng anh nghĩ chúng ta không thể. Đương nhiên đó chỉ là suy đoán anh mong 1 ngày nào đó nó sẽ thay đổi tích cực. Tâm anh chỉ có mỗi em thôi. Thương em rất nhiều. Chúc em có một ngày lễ hạnh phúc, anh xin lỗi vì những muộn phiền do anh gây ra!',
+    //     'nuadoituyet'
+    //   );
+    // } else if (pass === 'nganyc2212') {
+    //   // người yêu
+    //   openThiep(
+    //     'Gửi tới Thanh Nga',
+    //     'Có lẽ hai ta không có gì để nói hơn là tình bạn. T mong m với t vẫn là người bạn thay vì trở mặt thành một người xa lạ, có những lúc t kiệm lời vì khoảng cách chúng ta không cho phép, t vẫn mong m có được hạnh phúc. Chúc Nga có một ngày lễ vui vẻ hạnh phúc bên người yêu!',
+    //     'chanhlongthuongco'
+    //   );
+    // } else if (pass === 'kimtientt3311') {
+    //   // người yêu
+    //   openThiep(
+    //     'Gửi tới Kim Tiền',
+    //     'Có lẽ anh là một thằng đàn ông tồi khi không giữ được em. Anh rất xin lỗi vì đã đến bên em lúc anh không có gì, xin lỗi vì đã từng bỏ rơi em và xin lỗi vì những suy nghĩ, hành động thiếu trưởng thành của anh. Cảm ơn em vì mọi thứ. Chúc em có một ngày lễ vui vẻ bên người em chọn.',
+    //     'chanhlongthuongco'
+    //   );
+    } else if (pass === 'emgai1112') {
       // người thân ( em gái )
       openThiep(
         'Gửi lời chúc tới em gái Lan Hương',
@@ -106,13 +106,6 @@ const Date20_10 = () => {
         'Gửi lời chúc tới em gái không chính thống Hòa',
         'Như tiêu đề, quen nhau qua Internet nhưng anh xem em thật sự quan tâm như một đứa em trong nhà. Mong em có thể nhanh chóng tìm được chân ái của mình. Chúc em có một ngày lễ vui vẻ bên những người thân!',
         'xomu'
-      );
-    } else if (pass === 'nganico4554') {
-      // bạn bè
-      openThiep(
-        'Gửi lời đến Mai Nga',
-        'Gọi Mai Nga vì trùng tên người yêu cũ đấy, Hahha! Tuy gặp chưa lâu, cũng không thân thiết cho mấy nhưng bạn vẫn là người bạn tôi có thể tin tưởng. Chúc bạn có một ngày lễ vui vẻ và đạt được những thành tựu mới hơn trong tương lai nha!',
-        'thangnamkhongquen'
       );
     } else if (pass === 'hanhpipo2231') {
       // bạn bè
@@ -198,7 +191,7 @@ const Date20_10 = () => {
                   </Card>
                 </Col>
                 <Col lg="4" className="order-1 order-lg-2">
-                  <Fade left duration={1500}>
+                  <Fade left="true" duration={1500}>
                     <DisplayLottie animationPath="/lottie/tamthiep.json" />
                   </Fade>
                 </Col>
