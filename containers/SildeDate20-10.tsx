@@ -20,9 +20,9 @@ const SildeDate = () => {
                 </Fade>
               </Col>
               <Col lg="6" className="order-1 order-lg-2">
-                <Fade right duration={1500}>
+                <Fade right duration={1500} >
                   <h3 className="h3 mb-2">{section.role}</h3>
-                  <div className="d-flex justify-content-center flex-wrap mb-2">
+                  <div className="d-flex justify-content-center align-items-center flex-wrap mb-2">
                     <Fragment>{section.wish}</Fragment>
                   </div>
                 </Fade>

@@ -30,18 +30,27 @@ const Date20_10 = () => {
     await Swal.fire({
       icon: 'success',
       title: 'Mật mã chính xác',
-      text: 'Hãy xem lời nhắn được gửi đến bạn nhé!',
+      text: 'Hãy mở loa để nghe nhạc và xem lời nhắn được gửi đến bạn nhé!',
+      confirmButtonText: 'Xem thư',
     });
     setSnowShow(true);
-    nameMusic = nameMus = !'' ? nameMus : 'none';
+    nameMusic = nameMus ?? 'none';
     setMusic(true);
     await Swal.fire({
-      title: title ? title : 'Gửi tới',
-      text: text ? text : 'Lời chúc',
-      width: 600,
-      padding: '3em',
+      title: title ?? 'Gửi tới',
+      html: `
+       <div style="font-family: 'Pacifico', cursive;">
+          <p style="font-style: italic;">"${text ?? 'Lời nhắn'}"</p>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+            <div style="margin-right: 20px;">
+              <p>Thân ái,<br><strong>Nguyễn Minh Hậu</strong></p>
+            </div>
+          </div>
+       </div>`,
+      width: 800,
+      padding: '1em',
       color: '#000000',
-      background: '#fff url("")',
+      background: '#fff url("/img/background/hinhnen.png")',
       backdrop: ` rgba(252, 93, 241, 0.4) url("/gif/meo1.gif") left top no-repeat `,
       showConfirmButton: false,
       timer: 60000,
@@ -57,12 +66,11 @@ const Date20_10 = () => {
       'textarea[name="your_request"]'
     ) as HTMLTextAreaElement;
     const pass = inputElement?.value.replace(/\r?\n/g, '');
-    // console.log(pass);
     if (pass === 'me1703') {
       // mẹ
       openThiep(
         'Gửi lời tới mẹ của con',
-        'Con biết nơi quê nhà mẹ vẫn luôn lo lắng cho con, nhưng con nơi xa đã trưởng thành hơn rất nhiều. Con hiểu để sống và tồn tại không dễ nhưng đạo đức và những đức tính tốt con luôn tiếp thu và phát triển, mẹ đừng lo về những tệ nạn nơi sài thành. Vốn dĩ con đủ nhận thức và trưởng thành để nhận ra và tránh xa nó. Nên mẹ yên tâm. Chúc mẹ có một ngày lễ vui vẻ, đầy sức sống và luôn là chỗ dựa cho anh em con. Yêu mẹ ! Nguyễn Minh Hậu',
+        'Con biết nơi quê nhà mẹ vẫn luôn lo lắng cho con, nhưng con nơi xa đã trưởng thành hơn rất nhiều. Con hiểu để sống và tồn tại không dễ nhưng đạo đức và những đức tính tốt con luôn tiếp thu và phát triển, mẹ đừng lo về những tệ nạn nơi sài thành. Vốn dĩ con đủ nhận thức và trưởng thành để nhận ra và tránh xa nó. Nên mẹ yên tâm. Chúc mẹ có một ngày lễ vui vẻ, đầy sức sống và luôn là chỗ dựa cho anh em con. Yêu mẹ !',
         'nhatkicuame'
       );
     } else if (pass === 'phuonganhpeiu3322') {
@@ -129,9 +137,10 @@ const Date20_10 = () => {
       );
     } else {
       await Swal.fire({
-        icon: 'error',
+        icon: 'question',
         title: 'Mật mã không đúng',
-        text: 'Có lẽ chưa có ai gửi lời nhắn đến bạn!',
+        text: 'Có lẽ chưa có ai gửi lời nhắn đến bạn! Đừng buồn, hãy xem những lời nhắn nhủ ở dưới nhé.',
+        confirmButtonText: 'Được thôi!',
       });
     }
     setSend(false);
@@ -182,7 +191,7 @@ const Date20_10 = () => {
                           size="lg"
                           type="submit"
                         >
-                          {send ? 'Đang xác thực' : 'Gửi'}
+                          {send ? 'Đang xác thực' : 'Nhận thông điệp'}
                         </Button>
                       </div>
                     </CardBody>
@@ -201,11 +210,11 @@ const Date20_10 = () => {
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
               version="1.1"
-              viewBox="0 0 2560 100"
+              viewBox="0 0 2560 90"
               x="0"
               y="0"
             >
-              <polygon className="fill-white" points="2560 0 2560 100 0 100" />
+              <polygon className="fill-white" points="2560 0 2560 110 0 110" />
             </svg>
           </div>
         </section>

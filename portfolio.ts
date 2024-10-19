@@ -30,7 +30,7 @@ export const contact = {};
 
 export const socialLinks: SocialLinksType = {
   url: 'https://solana-education.vercel.app',
-  github: 'https://github.com/minhhaufpt',
+  github: 'https://github.com/mhaucoder',
   instagram: 'https://www.instagram.com/haunguyen.vn.2k3/',
   facebook: 'https://www.facebook.com/profile.php?id=100037362923065',
   linkedin: '',

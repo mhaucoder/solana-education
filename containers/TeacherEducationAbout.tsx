@@ -14,7 +14,7 @@ const TeacherEducationAbout = () => {
         </Row>
         <Row className="my-3">
           <Col lg="4" className="order-2 order-lg-1">
-            <Fade left duration={1500}>
+            <Fade left={true} duration={1500}>
               <DisplayLottie animationPath={'/lottie/checking.json'} />
             </Fade>
           </Col>

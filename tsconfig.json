@@ -21,7 +21,8 @@
     "**/*.tsx",
     "./types",
     "pages/test/pages.tsx",
-    "pages/middleware.ts"
+    "pages/middleware.ts",
+    "services/controller/script.js"
   ],
   "exclude": ["node_modules"]
 }

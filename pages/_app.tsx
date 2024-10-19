@@ -23,6 +23,7 @@ import {
 } from '@solana/wallet-adapter-wallets';
 import { clusterApiUrl } from '@solana/web3.js';
 import React, { FC, useMemo } from 'react';
+import Head from 'next/head';
 require('@solana/wallet-adapter-react-ui/styles.css');
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
@@ -43,13 +44,21 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
     [network]
   );
   return (
-    <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
-        <WalletModalProvider>
-          <Component {...pageProps} />
-        </WalletModalProvider>
-      </WalletProvider>
-    </ConnectionProvider>
+    <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Head>
+      <ConnectionProvider endpoint={endpoint}>
+        <WalletProvider wallets={wallets} autoConnect>
+          <WalletModalProvider>
+            <Component {...pageProps} />
+          </WalletModalProvider>
+        </WalletProvider>
+      </ConnectionProvider>
+    </>
   );
   //return <Component {...pageProps} />;
 };

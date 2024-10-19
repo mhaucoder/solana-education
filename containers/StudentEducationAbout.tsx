@@ -129,7 +129,7 @@ const StudentEducationAbout = () => {
     <Container className="text-center my-2 section section-lg">
       <Row className="my-3">
         <Col lg="4" className="order-2 order-lg-1">
-          <Fade left duration={1500}>
+          <Fade left={true} duration={1500}>
             <DisplayLottie animationPath={'/lottie/examCheck.json'} />
           </Fade>
         </Col>
@@ -166,7 +166,7 @@ const StudentEducationAbout = () => {
       </Row>
       <Row className="my-3">
         <Col lg="4" className="order-2 order-lg-1">
-          <Fade left duration={1500}>
+          <Fade left={true} duration={1500}>
             <DisplayLottie animationPath={'/lottie/examSuccess.json'} />
           </Fade>
         </Col>

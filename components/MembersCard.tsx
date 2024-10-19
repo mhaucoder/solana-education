@@ -20,7 +20,7 @@ const MembersCard = ({
 }: MemberType) => {
   return (
     <Col lg="6">
-      <Fade left duration={2000}>
+      <Fade left={true} duration={2000}>
         <Card
           style={{ flex: 1 }}
           className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"

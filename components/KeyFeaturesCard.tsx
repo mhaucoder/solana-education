@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 const KeyFeaturesCard = ({ title, desc, descBullets }: KeyFeatureType) => {
   return (
-    <Fade left duration={2000}>
+    <Fade left={true} duration={2000}>
       <Card className="card-lift--hover shadow mt-4">
         <CardBody>
           <div className="d-flex px-3">
