@@ -6,6 +6,7 @@ const HomeEducation = dynamic(() => import('../../containers/HomeEducation'));
 import SEO from '../../components/SEO';
 import FooterCard from '../../components/FooterCard';
 import IntroEducation from '../../containers/IntroEducation';
+import Alerts2 from '../../components/Alerts2';
 export default function Education() {
   return (
     <div>
