@@ -9,9 +9,8 @@ import {
   CardBody,
   FormGroup,
   Input,
-  Alert,
-  Fade,
 } from 'reactstrap';
+import Fade from 'react-reveal/Fade';
 import Music from '../components/Music';
 import Swal from 'sweetalert2';
 import DisplayLottie from '../components/DisplayLottie';
@@ -73,26 +72,26 @@ const Date20_10 = () => {
         'Con biết nơi quê nhà mẹ vẫn luôn lo lắng cho con, nhưng con nơi xa đã trưởng thành hơn rất nhiều. Con hiểu để sống và tồn tại không dễ nhưng đạo đức tốt hay xấu con có thể phân biệt, xin mẹ đừng lo. Chúc mẹ có một ngày lễ vui vẻ, đầy sức sống và luôn là chỗ dựa cho anh em con. Con chỉ có vài câu thơ tặng mẹ. Yêu mẹ !</br> Nắng vàng chiếu rọi muộn màng </br> Lòng mẹ mang bao sầu thương </br> Con nơi phương xa vẫn nhớ </br> Người mẹ tần tảo nuôi con',
         'thansinhphumau'
       );
-    // } else if (pass === 'phuonganhpeiu3322') {
-    //   openThiep(
-    //     'Gửi lời tới người anh thương Phương Anh',
-    //     'Anh biết anh nhiều hơn rất là nhiều tuổi, nhưng khi bắt đầu anh đã chấp nhận thì mọi tính tình của em anh đều có thể hiểu và thông cảm. Nhưng anh là người ít nói, ít khi giải bày tâm trạng với ai khác, kể cả em. Người thật sự để anh nói ra chỉ có người đi cùng anh tới cuối đời. Nhưng anh nghĩ chúng ta không thể. Đương nhiên đó chỉ là suy đoán anh mong 1 ngày nào đó nó sẽ thay đổi tích cực. Tâm anh chỉ có mỗi em thôi. Thương em rất nhiều. Chúc em có một ngày lễ hạnh phúc, anh xin lỗi vì những muộn phiền do anh gây ra!',
-    //     'nuadoituyet'
-    //   );
-    // } else if (pass === 'nganyc2212') {
-    //   // người yêu
-    //   openThiep(
-    //     'Gửi tới Thanh Nga',
-    //     'Có lẽ hai ta không có gì để nói hơn là tình bạn. T mong m với t vẫn là người bạn thay vì trở mặt thành một người xa lạ, có những lúc t kiệm lời vì khoảng cách chúng ta không cho phép, t vẫn mong m có được hạnh phúc. Chúc Nga có một ngày lễ vui vẻ hạnh phúc bên người yêu!',
-    //     'chanhlongthuongco'
-    //   );
-    // } else if (pass === 'kimtientt3311') {
-    //   // người yêu
-    //   openThiep(
-    //     'Gửi tới Kim Tiền',
-    //     'Có lẽ anh là một thằng đàn ông tồi khi không giữ được em. Anh rất xin lỗi vì đã đến bên em lúc anh không có gì, xin lỗi vì đã từng bỏ rơi em và xin lỗi vì những suy nghĩ, hành động thiếu trưởng thành của anh. Cảm ơn em vì mọi thứ. Chúc em có một ngày lễ vui vẻ bên người em chọn.',
-    //     'chanhlongthuongco'
-    //   );
+      // } else if (pass === 'phuonganhpeiu3322') {
+      //   openThiep(
+      //     'Gửi lời tới người anh thương Phương Anh',
+      //     'Anh biết anh nhiều hơn rất là nhiều tuổi, nhưng khi bắt đầu anh đã chấp nhận thì mọi tính tình của em anh đều có thể hiểu và thông cảm. Nhưng anh là người ít nói, ít khi giải bày tâm trạng với ai khác, kể cả em. Người thật sự để anh nói ra chỉ có người đi cùng anh tới cuối đời. Nhưng anh nghĩ chúng ta không thể. Đương nhiên đó chỉ là suy đoán anh mong 1 ngày nào đó nó sẽ thay đổi tích cực. Tâm anh chỉ có mỗi em thôi. Thương em rất nhiều. Chúc em có một ngày lễ hạnh phúc, anh xin lỗi vì những muộn phiền do anh gây ra!',
+      //     'nuadoituyet'
+      //   );
+      // } else if (pass === 'nganyc2212') {
+      //   // người yêu
+      //   openThiep(
+      //     'Gửi tới Thanh Nga',
+      //     'Có lẽ hai ta không có gì để nói hơn là tình bạn. T mong m với t vẫn là người bạn thay vì trở mặt thành một người xa lạ, có những lúc t kiệm lời vì khoảng cách chúng ta không cho phép, t vẫn mong m có được hạnh phúc. Chúc Nga có một ngày lễ vui vẻ hạnh phúc bên người yêu!',
+      //     'chanhlongthuongco'
+      //   );
+      // } else if (pass === 'kimtientt3311') {
+      //   // người yêu
+      //   openThiep(
+      //     'Gửi tới Kim Tiền',
+      //     'Có lẽ anh là một thằng đàn ông tồi khi không giữ được em. Anh rất xin lỗi vì đã đến bên em lúc anh không có gì, xin lỗi vì đã từng bỏ rơi em và xin lỗi vì những suy nghĩ, hành động thiếu trưởng thành của anh. Cảm ơn em vì mọi thứ. Chúc em có một ngày lễ vui vẻ bên người em chọn.',
+      //     'chanhlongthuongco'
+      //   );
     } else if (pass === 'emgai1112') {
       // người thân ( em gái )
       openThiep(
@@ -157,12 +156,26 @@ const Date20_10 = () => {
             <Container className="py-lg-md d-flex">
               <Row className="justify-content-center">
                 <Col lg="8" className="order-2 order-lg-1">
+                  <h1
+                    style={{
+                      color: '#d5006d',
+                      fontSize: '2em', // Giảm kích thước
+                      fontFamily: 'Pacifico', // Đổi font chữ
+                      textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)',
+                      marginBottom: '10px',
+                      padding: '10px',
+                      borderRadius: '10px',
+                      display: 'inline-block',
+                      transition: 'color 0.3s ease, background-color 0.3s ease',
+                    }}
+                  >
+                    Chào mừng ngày Phụ nữ Việt Nam 20-10
+                  </h1>
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <h4 className="mb-1">
-                        Hộp thoại này là giành riêng cho những người đặc biệt -
-                        những người đáng quý nhất trong cuộc đời của tôi.
-                      </h4>
+                      <h5 className="mb-1">
+                        Hộp thoại này là giành riêng cho những người đặc biệt
+                      </h5>
                       <FormGroup className="mb-4 mt-4">
                         <Input
                           className="form-control-alternative"
@@ -191,7 +204,7 @@ const Date20_10 = () => {
                   </Card>
                 </Col>
                 <Col lg="4" className="order-1 order-lg-2">
-                  <Fade left="true" duration={1500}>
+                  <Fade right={true} duration={1500}>
                     <DisplayLottie animationPath="/lottie/tamthiep.json" />
                   </Fade>
                 </Col>
@@ -203,11 +216,11 @@ const Date20_10 = () => {
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
               version="1.1"
-              viewBox="0 0 2560 90"
+              viewBox="0 0 2560 98"
               x="0"
               y="0"
             >
-              <polygon className="fill-white" points="2560 0 2560 110 0 110" />
+              <polygon className="fill-white" points="2560 0 2560 105 0 105" />
             </svg>
           </div>
         </section>
