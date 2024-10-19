@@ -95,8 +95,8 @@ const Date20_10 = () => {
     } else if (pass === 'emgai1112') {
       // người thân ( em gái )
       openThiep(
-        'Gửi lời chúc tới em gái Lan Hương',
-        'Suốt ngày bạn với chả bè, lo mà học hành tới nơi tới chốn để sau này còn phụ ba má, nhỏ nói là cãi lớn nói thì không nghe, hết lời để nói. Lớn rồi trưởng thành phải biết nghĩ cho gia đình, ở một mình nơi xa phải cẩn thận, t con trai không phải lo nhiều, m thì khác, RÕ KHÔNG! Chúc em gái có 1 ngày lễ ngập tràn hạnh phúc và sớm tìm được chân ái.',
+        'Gửi lời tới em gái Lan Hương',
+        'Năm tháng còn đó, tuổi trẻ nên có chừng mực cố gắng phấn đấu. Không nói ngày càng lớn chỉ mong đừng có mãi là trẻ con, không bảo phải nghe lời chỉ mong đừng không phân biệt đúng sai. Cũng không biết nói gì nữa thôi thì chúc em gái có một ngày lễ ngập tràn hạnh phúc và sớm tìm được chân ái.',
         'xomu'
       );
     } else if (pass === 'thihoaegm2222') {
